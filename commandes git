@@ -2,3 +2,14 @@ git config --global user.name "Etienne"
 git config --global user.email poursuiteetudesiut@gmail.com
 git config --global core.editor sublime_text
 git config --list
+
+git init
+git add *
+git commit -m 'initial projet version'
+
+Pour voir ce qui sera modifié par le prochain commit :
+git status
+
+Pour ajouter des fichiers/dossiers au prochain commit :
+git add <NomDuFichier/Dossier>
+
