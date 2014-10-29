@@ -13,4 +13,8 @@ git status
 Pour ajouter des fichiers/dossiers au prochain commit :
 git add <NomDuFichier/Dossier>
 
+Observer les différentes mises à jour qui ont eu lieu :
+git log
 
+Ajouter une remote (un genre d'alias) :
+git remote add 
