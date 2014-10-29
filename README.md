@@ -1,4 +1,0 @@
-PoursuiteEtudes
-===============
-
-projet poursuite etudes
