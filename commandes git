@@ -1,0 +1,4 @@
+git config --global user.name "Etienne"
+git config --global user.email poursuiteetudesiut@gmail.com
+git config --global core.editor sublime_text
+git config --list
