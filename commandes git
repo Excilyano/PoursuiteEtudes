@@ -13,3 +13,4 @@ git status
 Pour ajouter des fichiers/dossiers au prochain commit :
 git add <NomDuFichier/Dossier>
 
+
