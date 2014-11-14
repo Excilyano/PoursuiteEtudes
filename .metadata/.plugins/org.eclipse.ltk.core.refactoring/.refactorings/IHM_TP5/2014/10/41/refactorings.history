@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;controlLivre.java&apos; to &apos;IHM_TP5/src/ihm.tp5.controleurs&apos;&#x0A;- Original project: &apos;IHM_TP5&apos;&#x0A;- Destination element: &apos;IHM_TP5/src/ihm.tp5.controleurs&apos;&#x0A;- Original element: &apos;ihm.tp5.controlLivre.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;ihm.tp5.controleurs" element1="/src&lt;ihm.tp5{controlLivre.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1412803817840" units="1" version="1.0"/>
+</session>

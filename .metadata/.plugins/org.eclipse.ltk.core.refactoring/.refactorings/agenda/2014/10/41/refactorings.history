@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;controlleur&apos; to &apos;controleur&apos;&#x0A;- Original project: &apos;agenda&apos;&#x0A;- Original element: &apos;agenda/src/controlleur&apos;&#x0A;- Renamed element: &apos;agenda/src/controleur&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;controlleur&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;controlleur" name="controleur" qualified="false" references="true" stamp="1412805264461" textual="false" version="1.0"/>
+</session>
