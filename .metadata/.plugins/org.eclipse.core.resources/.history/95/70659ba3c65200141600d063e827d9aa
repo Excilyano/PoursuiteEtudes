@@ -1,0 +1,93 @@
+package fen_diverse;
+
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.Box;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+import connexion.Connexion;
+
+public class Inscription extends JFrame implements ActionListener{
+
+	private JLabel titre = new JLabel("Inscription"); // Instanciation de l'affichage du titre
+	private JPanel pPrincipal = new JPanel();
+	private JLabel login = new JLabel("Nom"); // Label du nom
+	private JTextField jtnom = new JTextField(""); // Champ pour entrer son identifiant
+	
+	private JLabel prenom = new JLabel("Prénom"); 
+	private JTextField jtprenom = new JTextField("");
+	
+	private JLabel adresse = new JLabel("adresse étudiante"); 
+	private JTextField jtadresse = new JTextField("");
+	
+	private JLabel identifiant = new JLabel("Identifiant"); 
+	private JTextField jtid = new JTextField("");
+	
+	private JLabel pass = new JLabel("Mot de Passe"); // Label du mot de passe
+	private JPasswordField jtpasswd = new JPasswordField(""); // Champ pour entrer son mot de passe (crypter)
+	
+	
+	private JButton signIn = new JButton("Valider l'inscription"); // Bouton pour l'inscription
+
+	public Inscription() {
+		this.setTitle("Inscription"); // Titre de la fen�tre
+    	this.setSize(600,400); // Taille de la fen�tre
+    	this.setDefaultCloseOperation(DISPOSE_ON_CLOSE); // Si on ferme la fen�tre, on ferme l'application
+    	this.setLocationRelativeTo(null); // Appara�t au milieu de l'�cran
+    	this.setResizable(true); // A une taille modifiable (ou non si false)
+    	
+    	initInscription(); //Initialise le contenu
+    	this.getContentPane().add(pPrincipal);
+    	this.setVisible(true); // Affiche le contenu de la page
+	}
+	
+	public void initInscription() {
+		jtnom.setPreferredSize(new Dimension(100, 30)); // Taille du champ de l'identifiant
+		jtprenom.setPreferredSize(new Dimension(100, 30)); 
+		jtadresse.setPreferredSize(new Dimension(100, 30)); 
+		jtid.setPreferredSize(new Dimension(100, 30)); 
+		jtpasswd.setPreferredSize(new Dimension(100, 30)); 
+		
+		Box b1 = Box.createVerticalBox();
+		
+		b1.add(login);
+		b1.add(jtnom);
+		b1.add(prenom);
+		b1.add(jtprenom);
+		b1.add(adresse);
+		b1.add(jtadresse);
+		b1.add(identifiant);
+		b1.add(jtid);
+		b1.add(pass);
+		b1.add(jtpasswd);
+		b1.add(new JLabel(" "));
+		b1.add(signIn);
+		pPrincipal.add(b1);
+		
+		
+		
+	}
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		
+	}
+	
+	public static void main(String[] args) {
+		new Inscription();
+	}
+	@SuppressWarnings("deprecation")
+	public void récupererDonnee(){
+		jtnom.getText();
+		jtprenom.getText();
+		jtadresse.getText();
+		jtid.getText();
+		jtpasswd.getText();		
+	}
+}
